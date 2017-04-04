@@ -16,11 +16,12 @@ public class PendulumRunner {
 	double sLen = 10, pMass = 10, theta0 = Math.PI/30;
 	GravityConstant earth = new GravityConstant(9.81);
 	GravityConstant jupiter = new GravityConstant(25.0);
+	
 	RegularPendulum rp = new RegularPendulum (sLen, pMass, theta0, delta, earth);
 	SimplePendulum sp = new SimplePendulum (sLen, pMass, theta0,earth);
 	RegularPendulum rpCoarse = 
 	    new RegularPendulum (sLen, pMass, theta0, .1, jupiter);
-
+	
 	// print out difference in displacement in 1 second intervals
 	// for 20 seconds
 	int iterations = (int) (1/delta);
