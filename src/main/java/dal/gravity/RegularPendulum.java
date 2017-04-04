@@ -26,7 +26,7 @@ public class RegularPendulum extends AbstractPendulum {
 		     double inDelta, GravityConstant mo) {
 	this (inLength, inMass, inTheta0, inDelta,0 , mo);
     }
-
+   
     public void step () {
 	iterations++;
 	lastTheta = lastTheta + lastVel*delta;

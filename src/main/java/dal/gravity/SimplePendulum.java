@@ -7,7 +7,9 @@ public class SimplePendulum extends AbstractPendulum {
 
     private double angularFrequency, periodOfMotion;
 
+
     private GravityConstant model;
+
     /**
      * Creates a new Pendulum instance using
      * inLength: the string length (>0)
